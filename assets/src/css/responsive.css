@@ -1,0 +1,26 @@
+@media (max-width: 760px) {
+  .our-team .team {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 580px) {
+  .container {
+    width: 100%;
+  }
+  .search {
+    display: none;
+  }
+  .clients li {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .our-team .team {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

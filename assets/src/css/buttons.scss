@@ -1,0 +1,104 @@
+
+
+.accordion {
+
+    .btn.btn-link {
+        color: #333;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: left;
+        width: 100%;
+        border: 0;
+        background: transparent;
+        border-radius: 0;
+
+        &:focus {
+            box-shadow: none;
+            text-decoration: none;
+        }
+        &:hover {
+            text-decoration: none;
+        }
+
+        &:before { 
+            content: "- ";
+            font-size: 28px;
+            line-height: 18px;
+            font-weight: 600;
+            color: $color-orange
+        }
+
+        &.collapsed:before {
+            content: "+";
+            font-size: 20px;
+            line-height: 18px;
+            font-weight: 600;
+            color: $color-orange
+        }
+    }
+
+    .card {
+        border: 0;
+        border-bottom: 1px solid #eee;
+
+        .card-header {
+            padding: .75rem 0rem;
+            background-color: transparent;
+            margin-bottom: 0px;
+            border-bottom: 0px #eee solid;
+        }
+        
+        &:not(:last-of-type) {
+            border-bottom: 1px solid #eee;
+
+        }
+    }
+}
+
+.btn-subscribe {
+    background-color: $color-orange;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+
+    &:hover {
+        background: darken($color-orange, 10%);
+        color: white;
+    }
+}
+
+.btn-call2action {
+    border: 2px #cccccc solid;
+    padding: 10px 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #333;
+    background: transparent;
+
+    &:hover {
+        border-color: darken(#cccccc ,20%);
+        color: darken(#333 ,10%);
+    }
+}
+
+.btn-back-to-top {
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    color: white;
+    background-color: $color-orange
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    display: none;
+
+    &:hover {
+        color: white;
+        background-color: darken($color-orange, 10%);
+    }
+  }
