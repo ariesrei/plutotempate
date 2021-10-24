@@ -1,0 +1,49 @@
+.home-temporary {
+  background-color: #453951;
+  color: white;
+  padding: 4.5rem 0 20rem;
+}
+
+.home-temporary h1 {
+  font-size: 46px;
+  font-weight: 700;
+}
+
+.header-breadcrumbs {
+  background-color: #453951;
+  color: white;
+  padding: 4.5rem 0 0;
+}
+
+.header-breadcrumbs .container {
+  padding: 20px 0;
+  position: relative;
+}
+
+.header-breadcrumbs h1 {
+  font-weight: 400;
+  padding: 0 15px;
+  margin: 0;
+}
+
+.header-breadcrumbs .breadcrumb {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  line-height: 2rem;
+  background: none;
+  border-radius: 0;
+}
+
+.header-breadcrumbs .breadcrumb a {
+  color: white;
+}
+
+.header-breadcrumbs .search-results {
+  display: inline-block;
+  max-width: 320px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/*# sourceMappingURL=header.css.map */

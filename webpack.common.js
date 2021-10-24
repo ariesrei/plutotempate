@@ -1,8 +1,8 @@
-const path = require('path');
- 
-const webpack = require('webpack');
+const path =                        require('path');
+const webpack =                     require('webpack');
+const MiniCssExtractPlugin =        require("mini-css-extract-plugin");
 
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
 
 module.exports = {
     context: path.resolve(__dirname, "assets"),

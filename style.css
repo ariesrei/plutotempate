@@ -4,10 +4,4 @@ Version: 1.0
 Author: Areis
 Description: Just another theme.
 Tags: Bootstrap4.6, Webpack, Fontawesome 
-
 */
-
-body #wpadminbar {
-    margin-bottom:28px !important;
-    border:1px red solid;
-}

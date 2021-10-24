@@ -1,16 +1,13 @@
 
-$link-primary: #333333;
-
-$text-primay: red;
-$primary-link: red;
+$text-primary: #333333;
+$link-primary: $text-primary;
 
 
 $bg-dark-custom: #453951;
 $bg-light-custome: #f5f5f5;
 
-$title-dark-color: #453951;
-$sub-title-color: #8f8897;
-
-
+$title-dark-color: $bg-dark-custom;
+$sub-title-color: darken($bg-dark-custom, 10%);
+// #8f8897;
 
 $color-orange: #ea623d;

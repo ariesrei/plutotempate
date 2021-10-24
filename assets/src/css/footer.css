@@ -1,0 +1,54 @@
+footer {
+  padding: 50px 0;
+  background-color: #2c2433;
+}
+
+footer .widget_title {
+  color: gray;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+footer .footer-link-orange {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ea623d;
+}
+
+footer .widget {
+  color: #b3b3b3;
+}
+
+footer .widget a {
+  color: #ea623d;
+}
+
+.footer-logo {
+  margin-bottom: 25px;
+}
+
+.footer-logo img {
+  margin-right: 10px;
+}
+
+.footer-logo span {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #6b6b6b;
+}
+
+span.copyright {
+  line-height: 2em;
+  color: #b3b3b3;
+}
+
+.tweet-date {
+  font-size: 13px;
+  color: #6b6b6b;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+/*# sourceMappingURL=footer.css.map */

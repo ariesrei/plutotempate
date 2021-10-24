@@ -16,6 +16,9 @@
     width: 100%;
     margin: 0;
   }
+  .header-breadcrumbs ol {
+    display: none;
+  }
 }
 
 @media (max-width: 320px) {

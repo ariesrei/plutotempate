@@ -1,0 +1,55 @@
+@import "variables";
+
+footer {
+    padding: 50px 0;
+    background-color: darken($bg-dark-custom, 10%); //#2a272e;
+
+    .widget_title {
+        color: lighten($text-primary, 30%); // #555258;
+        
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+    }
+
+    .footer-link-orange {
+        font-size: 18px;
+        font-weight: 600;
+        color: $color-orange;
+    }
+
+    .widget {
+        color: lighten($text-primary, 50%);
+
+        a {
+            color: $color-orange;
+        }
+    }
+}
+
+.footer-logo {
+    margin-bottom: 25px;
+
+    img {
+        margin-right: 10px
+    }
+    span {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: lighten($text-primary, 22%);
+    }
+}
+
+span.copyright {
+    line-height: 2em;
+    color: lighten($text-primary, 50%);
+}
+
+.tweet-date {
+    font-size: 13px;
+    color: lighten($text-primary, 22%); //#aaa
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}

@@ -1,11 +1,14 @@
-const path = require('path');
-const common = require('./webpack.common');
-const { merge } = require('webpack-merge');
-
+const path =                    require('path');
+const common =                  require('./webpack.common');
+const { merge } =               require('webpack-merge');
+ 
 module.exports = merge(common, {
     mode: "production",
+    optimization: {
+        minimize: true
+    },
     output: {
-        filename: 'main.prod.js',
-        path: path.resolve(__dirname,"assets/dist")
+        filename: '[name].min.js',
+        path: path.resolve(__dirname, 'assets/dist')
     }
 });
