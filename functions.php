@@ -4,11 +4,13 @@ include_once "header-title.php";
 
 add_action('after_setup_theme', function() {
     add_theme_support('title-tag');
-
+    add_theme_support('custom-logo');
+    add_theme_support('footer-logo');
+    add_theme_support('post-thumbnails');
 });
 
 add_action('wp_enqueue_scripts', function() {
-    wp_enqueue_script('main', get_stylesheet_directory_uri() . '/assets/dist/main.prod.js', [], '1.0.0', true );
+    wp_enqueue_script('main', get_stylesheet_directory_uri() . '/assets/dist/main.min.js', [], '1.0.0', true );
     wp_enqueue_style('main', get_stylesheet_directory_uri() . '/assets/dist/main.min.css', [], '1.0.0', 'all' );
 });
 

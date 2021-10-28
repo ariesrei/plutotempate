@@ -1,3 +1,6 @@
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 
 //Get the button
 let mybutton = document.getElementById("btn-back-to-top");
@@ -26,22 +29,6 @@ mybutton.addEventListener("click", function() {
 
 $(".current_page_item a").addClass("active");
 
- 
-// GSAP
-// gsap.from('.img-container', {opacity: 0, duration: 1, x: -100});
- 
-//gsap.from('.media', {opacity: 0, duration: 1,y: 100});
- 
-
-
-// let tween = gsap.from(".media", {
-//   opacity: 0,
-//   y:100, 
-//   scrollTrigger: ".media"
-// });
-
-//console.log(ScrollTrigger.getById("example").animation); // tween
-
 
 function animateFrom(elem, direction) {
   direction = direction || 1;
@@ -58,16 +45,21 @@ function animateFrom(elem, direction) {
     x = 0;
     y = 100;
   } else if (elem.classList.contains("gs_reveal_fromTop")) {
-    console.log('top');
     x = 0;
     y = -100;
   }
+
   elem.style.transform = "translate(" + x + "px, " + y + "px)";
+  document.body.style.overflowX = "hidden";
   elem.style.opacity = "0";
+
   gsap.fromTo(elem, {x: x, y: y, autoAlpha: 0}, {
+    trigger: '.container',
+    pin: true,
+    scrub: true,
     duration: 1.25, 
     x: 0,
-    y: 0, 
+    y: 0,
     autoAlpha: 1, 
     ease: "expo", 
     overwrite: "auto"
@@ -79,6 +71,7 @@ function hide(elem) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+
   gsap.registerPlugin(ScrollTrigger);
   
   gsap.utils.toArray(".gs_reveal").forEach(function(elem) {
@@ -90,5 +83,8 @@ document.addEventListener("DOMContentLoaded", function() {
       onEnterBack: function() { animateFrom(elem, -1) },
       onLeave: function() { hide(elem) } // assure that the element is hidden when scrolled into view
     });
-  });
+  }); 
+
 });
+
+

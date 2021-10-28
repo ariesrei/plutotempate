@@ -12,8 +12,15 @@
     <header>
             <nav class="navbar navbar-expand-md fixed-top">
                 <div class="container">
-                    <a class="navbar-brand logo" href="#">
-                        <img src="<?=site_url()?>/wp-content/themes/plutotemplate/assets/src/images/logo.png" alt=""/> Pluto</a>
+                    <a class="navbar-brand logo" href="<?=site_url()?>">
+                        <?php 
+                        if(function_exists('the_custom_logo')) {
+                            $custom_logo = get_theme_mod('custom_logo');
+                            $logo = wp_get_attachment_image_src($custom_logo);
+                            $logo = $logo[0];
+                        }
+                        ?> 
+                        <img src="<?=$logo?>" alt=""/> <?=get_bloginfo('name')?></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars "></i></button>
                         
                         <div class="collapse navbar-collapse" id="navbarCollapse">

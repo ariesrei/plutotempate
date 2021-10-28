@@ -1,6 +1,10 @@
 <?php 
 
 get_header(); 
+
+?>
+
+<?php
  
     // Load posts loop.
     while( have_posts() ) 
@@ -12,4 +16,9 @@ get_header();
 
     }
 
+?>
+<?php
+
 get_footer();
+
+?>
