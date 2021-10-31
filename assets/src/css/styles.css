@@ -51,21 +51,23 @@ a:hover {
 }
 
 .clients {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 100px;
+  grid-gap: 10px 10px;
+  vertical-align: middle;
 }
 
-.clients li {
+.clients div {
   background-color: #b1abb6;
-  height: 110px;
-  margin: 6px;
-  padding: 0;
-  display: inline-block;
-  width: 23%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  padding: 10px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  text-align: center;
+  max-height: 100px;
+  overflow: hidden;
 }
 
 .photostream {

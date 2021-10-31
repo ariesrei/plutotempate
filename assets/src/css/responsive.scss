@@ -3,6 +3,10 @@
         width: 300px;
         margin-bottom: 20px;
     }
+
+    .clients { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
 }
 
 @media (max-width: 580px) {
@@ -25,5 +29,8 @@
 @media (max-width: 320px) {
     .our-team .team {
         width: 100%;
+    }
+    .clients { 
+        grid-template-columns: repeat(1, 1fr); 
     }
 }

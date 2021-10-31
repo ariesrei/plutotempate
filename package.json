@@ -24,6 +24,6 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "gsap": "file:gsap-bonus.tgz"
+    "gsap": "npm:@gsap/member@^3.8.0"
   }
 }

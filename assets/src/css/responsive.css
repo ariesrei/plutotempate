@@ -3,6 +3,10 @@
     width: 300px;
     margin-bottom: 20px;
   }
+  .clients {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 580px) {
@@ -24,6 +28,10 @@
 @media (max-width: 320px) {
   .our-team .team {
     width: 100%;
+  }
+  .clients {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
   }
 }
 /*# sourceMappingURL=responsive.css.map */

@@ -15,4 +15,8 @@
   overflow-y: hidden !important;
   position: relative;
 }
+
+.blinderTextAnimation:after {
+  content: "";
+}
 /*# sourceMappingURL=gsap.css.map */
